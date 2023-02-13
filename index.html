@@ -14,15 +14,13 @@
         var max;
 
         if(a > b) {
-            if(a > c) {
-                max = a;
-            }
-            else {
-                max = c;
-            }
+            max = a;
         }
-        else if(b > c) {
+        else {
             max = b;
+        }
+        if (max > c) {
+            max = max;
         }
         else {
             max = c;
